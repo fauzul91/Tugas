@@ -56,14 +56,14 @@ form button {
 
 .password-container input {
     width: 100%;
-    padding-right: 40px; /* Supaya icon tidak menutupi teks */
+    padding-right: 40px;
 }
 
 .toggle-password {
     position: absolute;
     right: 10px;
-    width: 20px; /* Ukuran icon */
+    width: 20px; 
     height: 20px;
-    cursor: pointer; /* Supaya icon bisa diklik */
+    cursor: pointer; 
 }
 
