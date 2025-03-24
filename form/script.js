@@ -23,3 +23,15 @@ function validateForm() {
     alert("Registrasi berhasil!");
     return true;
 }
+
+function togglePassword(inputId, icon) {
+    let passwordField = document.getElementById(inputId);
+
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        icon.src = "hide-pw.png"; 
+    } else {
+        passwordField.type = "password";
+        icon.src = "show-pw.png"; 
+    }
+}

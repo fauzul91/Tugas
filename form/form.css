@@ -47,3 +47,23 @@ form button {
     color: white;
     border-radius: 10px;
 }
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px; /* Supaya icon tidak menutupi teks */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    width: 20px; /* Ukuran icon */
+    height: 20px;
+    cursor: pointer; /* Supaya icon bisa diklik */
+}
+

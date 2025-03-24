@@ -8,26 +8,32 @@
 </head>
 <body>
     <div class="wrapper">
-        <form onsubmit="validateForm()">
+        <form onsubmit="return validateForm()">
             <h1>Form Registrasi</h1>
-
+        
             <label for="nama">Nama</label>
             <input type="text" id="nama" placeholder="Masukkan nama anda">
-
+        
             <label for="usia">Usia</label>
             <input type="number" id="usia" placeholder="Masukkan usia anda">
-            
+        
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="Masukkan email anda">
-
+        
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Masukkan password anda">
-
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Masukkan password anda">
+                <img src="show-pw.png" alt="Show Password" class="toggle-password" onclick="togglePassword('password', this)">
+            </div>
+        
             <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" placeholder="Konfirmasi password anda">
-
-            <button type="submit" value="submit">Submit</button>
-        </form>
+            <div class="password-container">
+                <input type="password" id="confirm-password" placeholder="Konfirmasi password anda">
+                <img src="show-pw.png" alt="Show Password" class="toggle-password" onclick="togglePassword('password', this)">
+            </div>
+        
+            <button type="submit">Submit</button>
+        </form>        
     </div>
 <script src="script.js"></script>
 </body>
